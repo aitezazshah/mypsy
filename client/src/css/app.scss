@@ -1,0 +1,204 @@
+// app global css in SCSS form
+
+@font-face {
+  font-family: BasisGrotesqueArabicPro;
+  src: url(/fonts/BasisGrotesqueArabicPro-Regular.ttf);
+}
+@font-face {
+  font-family: Inter;
+  src: url(/fonts/Inter-Regular.ttf);
+}
+
+*:not(i) {
+  font-family: Inter;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.rounded-border {
+  border-radius: 16px;
+}
+.rounded-border-sm {
+  border-radius: 8px;
+}
+.follow-btn-bg {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lg-text {
+  font-size: 56px;
+  font-weight: 700;
+}
+.md-text {
+  font-size: 48px;
+  font-weight: 600;
+}
+.md-2-text {
+  font-size: 32px;
+  font-weight: 700;
+}
+.sm-text {
+  font-size: 22px;
+  font-weight: 700;
+}
+.xs-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.padding-y {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.padding-y-md {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.black-text {
+  color: #1a202c;
+}
+.gray-text {
+  color: #83878f;
+}
+// XS Screen
+@media only screen and (max-width: 599.99px) {
+  .lg-text {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .md-text {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .md-2-text {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .sm-text {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .xs-text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .padding-y {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .padding-y-md {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+// SM Screen
+@media only screen and (min-width: 600px) and (max-width: 1023.99px) {
+  .lg-text {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .md-text {
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .md-2-text {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .sm-text {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .xs-text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .padding-y {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .padding-y-md {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+// MD Screen
+@media only screen and (min-width: 1024px) and (max-width: 1439.99px) {
+  .lg-text {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .md-text {
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .md-2-text {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .sm-text {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .xs-text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+// LG Screen
+@media only screen and (min-width: 1440px) and (max-width: 1919.99px) {
+}
+// XL Screen
+@media only screen and (min-width: 1920px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .first-section-container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1444px) {
+  .first-section-container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1445px) and (max-width: 1550px) {
+  .layout-container {
+    // max-width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .first-section-container {
+    // max-width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .header-padding {
+    padding-left: 60px;
+    padding-left: 60px;
+  }
+}
+@media only screen and (min-width: 1551px) {
+  .layout-container {
+    // max-width: 75%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .first-section-container {
+    // max-width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .header-padding {
+    // padding-left: 70px;
+    // padding-right: 70px;
+  }
+}
