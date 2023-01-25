@@ -1,80 +1,69 @@
 <template>
     <div class="cards">
-        <q-card class="card">
+        <q-card v-for="(card, index) in cards" :key="index" class="card">
             <q-card-section class="card-section q-px-md">
-                <q-icon name="event" class="rounded-icon-1 text-white" size="24px" style="background-color:#1EBCB4" />
+                <q-icon :name="card.icon" class="rounded-icon-1 text-white" size="24px"
+                    :style="{ 'background-color': card.color }" />
                 <div class="content q-px-md">
-                    <span class="data" style="color:#1EBCB4">24.4K</span>
+                    <span class="data" :style="{ 'color': card.color }">{{ card.data }}</span>
                     <br />
-                    <span class="text">Appointments</span>
+                    <span class="text">{{ card.text }}</span>
                 </div>
             </q-card-section>
         </q-card>
         <q-space></q-space>
-        <q-card class="card">
-            <q-card-section class="card-section q-px-md">
-                <q-icon name="fa fa-user" class="rounded-icon-1 text-white" size="24px"
-                    style="background-color:#A27FFF" />
-                <div class="content q-px-md">
-                    <span class="data" style="color:#A27FFF">166.6K</span>
-                    <br />
-                    <span class="text">Total Patient</span>
-                </div>
-            </q-card-section>
-        </q-card>
-        <q-space></q-space>
-        <q-card class="card">
-            <q-card-section class="card-section q-px-md">
-                <q-icon name="fa fa-video" class="rounded-icon-1 text-white" size="24px"
-                    style="background-color:#4EB2F9" />
-                <div class="content q-px-md">
-                    <span class="data" style="color:#4EB2F9">28.0K</span>
-                    <br />
-                    <span class="text">Video Consulting</span>
-                </div>
-            </q-card-section>
-        </q-card>
-        <q-space></q-space>
-        <q-card class="card">
-            <q-card-section class="card-section q-px-md">
-                <q-icon name="fa fa-hospital" class="rounded-icon-1 text-white" size="24px"
-                    style="background-color:#FFB201" />
-                <div class="content q-px-md">
-                    <span class="data" style="color:#FFB201">53.5K</span>
-                    <br />
-                    <span class="text">Clinic Consulting</span>
-                </div>
-            </q-card-section>
-        </q-card>
-
-
-
     </div>
-
-
 </template>
-
-
-<script setup>
-
+<script>
+export default {
+    data() {
+        return {
+            cards: [
+                {
+                    data: '24.4K',
+                    text: 'Appointments',
+                    icon: 'event',
+                    color: '#1EBCB4'
+                },
+                {
+                    data: '166.6K',
+                    text: 'Total Patient',
+                    icon: 'fa fa-user',
+                    color: '#A27FFF'
+                },
+                {
+                    data: '28.0K',
+                    text: 'Video Consulting',
+                    icon: 'fa fa-video',
+                    color: '#4EB2F9'
+                },
+                {
+                    data: '53.5K',
+                    text: 'Clinic Consulting',
+                    icon: 'fa fa-hospital',
+                    color: '#FFB201'
+                }
+            ]
+        }
+    }
+}
 </script>
 
 <style lang="scss" scoped>
 .cards {
-    // border: 2px solid red;
     display: flex;
     margin-left: 250px;
     height: auto;
     padding: 10px;
-
 }
 
-.card{
+.card {
     width: 240px;
     height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin-right: 20px;
 }
 
 .card-section {
@@ -99,23 +88,45 @@
     font-size: 14px;
 }
 
+@media (max-width:1290px) {
+    .cards {
+        flex-wrap: wrap;
+
+    }
+
+    .card {
+        margin: 20px;
+    }
+}
+
 @media (max-width:1022px) {
     .cards {
         margin-left: 0px;
+        flex-wrap: nowrap;
     }
-        .card {
-            width: 185px;
-            height: 100px;
-            
-        }
 
-    // .card {
-    //     margin: 5px;
-    // }
+    .card {
+        width: 165px;
+        height: 100px;
+        justify-content: center;
+
+
+    }
+
+    .rounded-icon-1 {
+        border-radius: 50%;
+        padding: 8px;
+    }
+
+    .data {
+
+        font-size: 21px;
+        font-weight: 700;
+    }
 
 }
 
-@media (max-width:750px) {
+@media (max-width:768px) {
     .cards {
         flex-direction: column;
     }

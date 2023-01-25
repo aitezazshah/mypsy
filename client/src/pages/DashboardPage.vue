@@ -1,11 +1,11 @@
 <template>
     <q-layout class="layout">
-        
-            <LeftSideBar />
-            <CardComponent />
-            <ChartComponent/>
-            
-       
+
+        <LeftSideBar />
+        <CardComponent />
+        <ChartComponent />
+
+
     </q-layout>
 </template>
 
@@ -17,7 +17,7 @@ import ChartComponent from 'src/components/dashboardPage/ChartComponent.vue'
 
 </script>
 <style scoped>
-.layout{
+.layout {
     background-color: #E5E5E5;
 }
 </style>

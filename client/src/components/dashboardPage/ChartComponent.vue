@@ -66,16 +66,19 @@ export default defineComponent({
 .chart-component {
     display: flex;
     justify-content: space-between;
+    
 }
 
-@media (max-width:800px) {
+@media (max-width:1024px) {
     .chart {
-        margin-left: 0px;
-        margin: auto;
+        // margin-left: 0px;
+        // margin: auto;
     }
 
     .chart-component {
         flex-direction: column;
+        flex-wrap: wrap;
+        
 
     }
 
@@ -83,5 +86,11 @@ export default defineComponent({
         margin: auto;
     }
 
+}
+@media (max-width:900px){
+    .chart {
+            margin-left: 0px;
+            margin: auto;
+        }
 }
 </style>
