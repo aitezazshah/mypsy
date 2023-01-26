@@ -70,10 +70,10 @@ export default defineComponent({
 }
 
 @media (max-width:1024px) {
-    .chart {
-        // margin-left: 0px;
-        // margin: auto;
-    }
+    // .chart {
+    //     // margin-left: 0px;
+    //     // margin: auto;
+    // }
 
     .chart-component {
         flex-direction: column;

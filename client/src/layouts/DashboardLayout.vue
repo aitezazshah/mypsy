@@ -101,7 +101,6 @@ export default defineComponent({
 .search {
     border: none;
     outline: none;
-    /* border: 2px solid red; */
     border-radius: 15px;
 }
 
@@ -121,12 +120,10 @@ export default defineComponent({
 }
 
 .image-div {
-    /* border: 2px solid red; */
     width: 40px;
     height: 40px;
     border-radius: 100%;
     background-image: url(../assets/doctor-1.jpg);
-    /* background-repeat:no-repeat ; */
     background-size: cover;
     background-position: top center;
 
