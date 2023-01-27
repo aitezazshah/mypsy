@@ -58,7 +58,7 @@ export default {
 }
 
 .card {
-    width: 240px;
+    width: 280px;
     height: 100px;
     display: flex;
     justify-content: space-between;

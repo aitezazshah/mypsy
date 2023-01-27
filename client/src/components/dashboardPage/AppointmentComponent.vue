@@ -44,7 +44,7 @@ export default {
                 { id: 2, name: 'Floyd Miles', date: '45 Male, 12 April, 9:30', status: 'declined', image: image },
                 { id: 1, name: 'Marvin McKinney', date: '45 Male, 12 April, 9:30', status: 'confirmed', image: image_1 },
 
-                
+
             ]
         }
     }
@@ -57,7 +57,7 @@ export default {
     height: 538px;
     width: 418px;
     margin-left: 260px;
-    // overflow-y: scroll;
+
 }
 
 .heading {
@@ -116,8 +116,27 @@ button {
 
 .declined {
     background-color: #FF52631A;
-    
+
     color: #FF5263;
     border: 1px solid #FF5263;
+}
+
+
+@media (max-width:1023px) {
+    .appointments {
+        margin-left: 0px;
+        overflow-y: scroll;
+
+    }
+
+    .list {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px) {
+    .appointments {
+        width: 300px;
+    }
 }
 </style>
