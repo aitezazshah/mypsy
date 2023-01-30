@@ -5,9 +5,9 @@
         <CardComponent />
         <ChartComponent />
         <div class="component">
-            <AppointmentComponent class="hello-1" />
-            <PatientStatsComponent class="hello-2" />
-            <CurrentAppointmentComponent class="hello-2" />
+            <AppointmentComponent />
+            <PatientStatsComponent />
+            <CurrentAppointmentComponent/>
         </div>
 
 
