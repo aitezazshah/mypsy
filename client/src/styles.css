@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+#app{
+    margin-top: 0 !important;
+}
+:root{
+    --primary: #00A18B;
+    --secondary: #1D617A;
+   
+}
