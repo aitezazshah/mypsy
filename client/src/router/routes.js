@@ -25,6 +25,16 @@ const routes = [
     ],
   },
   {
+    path: '/',
+    component: () => import('layouts/MembershipLayout.vue'),
+    children: [
+      {
+        path: '/membership',
+        component: () => import('pages/MembershipPage.vue'),
+      },
+    ],
+  },
+  {
     path: '/signin',
     component: () => import('components/SignIn.vue'),
   },
