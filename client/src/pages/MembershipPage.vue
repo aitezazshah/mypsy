@@ -1,10 +1,10 @@
 <template>
-    <q-page >
-        <FirstSection/>
-        <PackageSection/>
-        <WhatYouGetSection/>
-        <UsersSaySection/>
-        <FollowUsSection/>
+    <q-page>
+        <FirstSection />
+        <PackageSection />
+        <WhatYouGetSection />
+        <UsersSaySection />
+        <FollowUsSection />
         <FooterSection />
     </q-page>
 </template>
