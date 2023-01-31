@@ -27,22 +27,17 @@ export default {
 </script>
 
 <style>
-/* .main-container{
-    border: 1px solid red;
-} */
+
 .content{
     display: flex;
-    /* border: 1px solid blue; */
     width: 100%;
     height: 100%;
 }
 .left-content{
-    /* border: 1px solid yellow; */
     width: 50%;
     height: 100%;
 }
 .right-content{
-    /* border: 1px solid green; */
     width: 50%;
     height: 100%;
 }
