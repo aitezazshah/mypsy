@@ -17,6 +17,7 @@
         </div>
         </div>
     </div>
+    <hr class="container">
 </template>
 
 <script>
@@ -57,6 +58,10 @@ export default {
     color: #1F2125;
     font-size: 18px;
     font-weight: 600;
+}
+hr{
+    border: none;
+    border-top: 1px dashed #D3D8E0 ;
 }
 @media (max-width:660px) {
     .content{
