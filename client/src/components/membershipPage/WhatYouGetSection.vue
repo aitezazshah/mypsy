@@ -65,5 +65,8 @@ export default {
     .left-content,.right-content{
         width: 100%;
     }
+        .left-heading {
+            font-size: 28px;           
+        }
 }
 </style>
