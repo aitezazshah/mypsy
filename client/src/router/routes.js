@@ -35,6 +35,16 @@ const routes = [
     ],
   },
   {
+    path: '/',
+    component: () => import('layouts/ContactLayout.vue'),
+    children: [
+      {
+        path: '/appointment',
+        component: () => import('pages/AppointmentPage.vue'),
+      },
+    ],
+  },
+  {
     path: '/signin',
     component: () => import('components/SignIn.vue'),
   },
