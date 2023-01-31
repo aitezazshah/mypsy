@@ -49,7 +49,7 @@ export default {
 
 </script>
 
-<style>
+<style lang="scss" scoped>
 .faq-details {
     font-size: 16px;
     color: #51545C;
